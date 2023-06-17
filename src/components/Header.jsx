@@ -1,5 +1,7 @@
 import React from "react";
-import { useLocation } from 'react-router-dom';
+import { useLocation,Link } from 'react-router-dom';
+
+
 function Header() {
   let location = useLocation();
   console.log(location.pathname)
@@ -27,24 +29,24 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarNav" style={{flexGrow:0}}>
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className={location.pathname === "/" ? active:inactive} aria-current="page" href="/">
+                <Link className={location.pathname === "/" ? active:inactive} aria-current="page" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className={location.pathname === "/work" ? active:inactive} href="/work">
+                <Link className={location.pathname === "/work" ? active:inactive} to="/work">
                   Work
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className={location.pathname === "/about" ? active:inactive} href="/about">
+                <Link className={location.pathname === "/about" ? active:inactive} to="/about">
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className={location.pathname === "/contact" ? active:inactive} href="/contact">
+                <Link className={location.pathname === "/contact" ? active:inactive} to="/contact">
                   Contact
-                </a>
+                </Link>
               </li>
 
             </ul>
