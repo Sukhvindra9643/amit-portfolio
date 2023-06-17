@@ -1,18 +1,17 @@
 import React from "react";
 import { useLocation,Link } from 'react-router-dom';
-
+import "../App.css"
 
 function Header() {
   let location = useLocation();
-  console.log(location.pathname)
   let inactive = "nav-link fs-5 fw-medium";
   let active = inactive+" active"
 
   return (
-    <header>
+    <header className="header">
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid" style={{justifyContent:"space-around"}}>
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand navbar-logo" href="#">
             <img src="https://res.cloudinary.com/dk0o7tdks/image/upload/v1686433147/logo_portfolio_1_eptpen.png" alt="logo" className="w-50"/>
           </a>
           <button
@@ -26,7 +25,7 @@ function Header() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav" style={{flexGrow:0}}>
+          <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link className={location.pathname === "/" ? active:inactive} aria-current="page" to="/">

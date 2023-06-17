@@ -1,0 +1,177 @@
+
+.hero-top {
+  height: 80vh;
+  width: 98vw;
+}
+.hero {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+.hero-image {
+  position: absolute;
+  width: 50vw;
+  height: 70vh;
+  left: 20%;
+}
+.hero-content {
+  width: 30vw;
+  height: 40vh;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+}
+.hero-content-name {
+  font-family: "Hanson";
+  font-style: normal;
+  font-size: 21px;
+  font-weight: 800;
+}
+.hero-content-para {
+  font-family: "IowanOldSt BT";
+  font-weight: 800;
+  font-size: 21px;
+  color: gray;
+}
+
+@media screen and (max-width: 768px) {
+  #navbarNav {
+    flex-grow: 0;
+    position: absolute;
+    top: 100%;
+    background-color: currentcolor;
+    width: 92%;
+    padding: 30px 85px;
+    height: 70vh;
+    z-index: 99;
+  }
+  .hero-content {
+    width: 35vw;
+    height: 40vh;
+    position: absolute;
+    left: 55%;
+    top: 25%;
+  }
+  .hero-content-name {
+    font-family: "Hanson";
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .hero-content-para {
+    font-family: "IowanOldSt BT";
+    font-weight: 600;
+    font-size: 17px;
+    color: gray;
+  }
+}
+@media screen and (max-width: 500px) {
+    #navbarNav {
+        flex-grow: 0;
+        position: absolute;
+        top: 100%;
+        background-color: currentcolor;
+        width: 92%;
+        padding: 30px 170px;
+        height: 84vh;
+        z-index: 99;
+      }
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-image {
+    position: absolute;
+    width: 100vw;
+    height: 0vh;
+    left: 10%;
+    top: 5%;
+  }
+  .hero-content {
+    width: 80vw;
+    height: 40vh;
+    position: absolute;
+    left: 13%;
+    top: 65%;
+  }
+}
+@media screen and (max-width: 400px) {
+    #navbarNav {
+        flex-grow: 0;
+        position: absolute;
+        top: 100%;
+        background-color: currentcolor;
+        width: 92%;
+        padding: 30px 140px;
+        height: 84vh;
+        z-index: 99;
+      }
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-image {
+    position: absolute;
+    width: 100vw;
+    height: 0vh;
+    left: 10%;
+    top: 5%;
+  }
+  .hero-content {
+    width: 80vw;
+    height: 40vh;
+    position: absolute;
+    left: 13%;
+    top: 60%;
+  }
+}
+@media screen and (max-width: 330px) {
+    #navbarNav {
+        flex-grow: 0;
+        position: absolute;
+        top: 100%;
+        background-color: currentcolor;
+        width: 92%;
+        padding: 30px 115px;
+        height: 84vh;
+        z-index: 99;
+      }
+  .header {
+    height: 10vh;
+  }
+  .navbar-logo {
+    width: 70vw;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .hero-image {
+    position: absolute;
+    width: 100vw;
+    height: 0vh;
+    left: 10%;
+    top: 5%;
+  }
+  .hero-content {
+    width: 94vw;
+    height: 40vh;
+    position: absolute;
+    left: 12%;
+    top: 52%;
+  }
+  .hero-content-name {
+    font-family: "Hanson";
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .hero-content-para {
+    font-family: "IowanOldSt BT";
+    font-weight: 600;
+    font-size: 16px;
+    color: gray;
+  }
+}
